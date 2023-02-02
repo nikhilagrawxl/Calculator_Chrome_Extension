@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self';
+      script-src 'self' https://aframe.io;
+      style-src 'self' 'unsafe-inline';"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utils.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1 class="text-center">Calculator</h1>
+    <div class="container flex flex-col items-center mx-auto">
+        <div class="output">
+            <div data-previous-operand class="previous-operand"></div>
+            <div data-current-operand class="current-operand"></div>
+          </div>
+        <div class="row first">
+            <button data-all-clear class="button">AC</button>
+            <button data-delete class="button">DEL</button>
+        </div>
+        <div class="row">
+            <button data-number class="button">7</button>
+            <button data-number class="button">8</button>
+            <button data-number class="button">9</button>
+            <button data-operation class="button">*</button>
+        </div>
+        <div class="row">
+            <button data-number class="button">4</button>
+            <button data-number class="button">5</button>
+            <button data-number class="button">6</button>
+            <button data-operation class="button">/</button>
+        </div>
+        <div class="row">
+            <button data-number class="button">1</button>
+            <button data-number class="button">2</button>
+            <button data-number class="button">3</button>
+            <button data-operation class="button">+</button>
+        </div>
+        <div class="row">
+            <button data-number class="button">0</button>
+            <button data-number class="button">.</button>
+            <button data-equals class="button">=</button>
+            <button data-operation class="button">-</button>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Nikhil Agrawal <i class="fa-solid fa-heart"></i></p>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
